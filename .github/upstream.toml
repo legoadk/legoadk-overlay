@@ -1,0 +1,15 @@
+# Upstream version tracking configuration for legoadk-overlay
+
+[defaults]
+# Default check mode for GitHub: "release" checks /releases, falling back to /tags
+# when the request succeeds but no eligible release is found.
+# "tags" checks git tags directly
+github_check = "release"
+# Filter out pre-releases/RCs by default
+ignore_prereleases = false
+
+["media-gfx/solidcraft"]
+source = "github"
+repo = "tangency-labs/solidcraft"
+tag_prefix = "v"
+

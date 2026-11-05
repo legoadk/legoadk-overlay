@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+    <repo priority="100" quality="experimental" status="unofficial">
+        <name>legoadk-overlay</name>
+        <description lang="en">legoadk's personal ebuild overlay.</description>
+        <homepage>https://github.com/legoadk/legoadk-overlay</homepage>
+        <owner>
+            <name>legoadk</name>
+            <email>legoadk@proton.me</email>
+        </owner>
+        <source type="git">https://github.com/legoadk/legoadk-overlay.git</source>
+        <source type="git">git://github.com/legoadk/legoadk-overlay.git</source>
+        <source type="git">git@github.com:legoadk/legoadk-overlay.git</source>
+        <feed>https://github.com/legoadk/legoadk-overlay/commits/master.atom</feed>
+    </repo>
+</repositories>

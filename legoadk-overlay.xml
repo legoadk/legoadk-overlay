@@ -1,0 +1,11 @@
+<repositories encoding="unicode" version="1.1">
+  <repo priority="50" quality="experimental">
+    <name>legoadk-overlay</name>
+    <description>legoadk's personal ebuild overlay.</description>
+    <owner>
+      <name>legoadk</name>
+      <email>legoadk@proton.me</email>
+    </owner>
+    <source type="git">https://github.com/legoadk/legoadk-overlay.git</source>
+  </repo>
+</repositories>
