@@ -6,7 +6,7 @@
         <homepage>https://github.com/legoadk/legoadk-overlay</homepage>
         <owner>
             <name>legoadk</name>
-            <email>legoadk@proton.me</email>
+            <email>legoguy@gmail.com</email>
         </owner>
         <source type="git">https://github.com/legoadk/legoadk-overlay.git</source>
         <source type="git">git://github.com/legoadk/legoadk-overlay.git</source>

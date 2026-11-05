@@ -3,6 +3,7 @@
 legoadk's personal Gentoo ebuild overlay.
 
 ## Usage
+
 ```sh
 eselect repository enable legoadk-overlay
 emerge --sync legoadk-overlay
