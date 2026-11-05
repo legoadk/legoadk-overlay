@@ -5,12 +5,11 @@
         <description lang="en">legoadk's personal ebuild overlay.</description>
         <homepage>https://github.com/legoadk/legoadk-overlay</homepage>
         <owner>
-            <name>legoadk</name>
             <email>legoguy@gmail.com</email>
+            <name>legoadk</name>
         </owner>
         <source type="git">https://github.com/legoadk/legoadk-overlay.git</source>
-        <source type="git">git://github.com/legoadk/legoadk-overlay.git</source>
-        <source type="git">git@github.com:legoadk/legoadk-overlay.git</source>
+        <source type="git">git+ssh://git@github.com/legoadk/legoadk-overlay.git</source>
         <feed>https://github.com/legoadk/legoadk-overlay/commits/master.atom</feed>
     </repo>
 </repositories>
