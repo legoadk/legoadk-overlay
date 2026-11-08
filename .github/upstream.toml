@@ -6,10 +6,10 @@
 # "tags" checks git tags directly
 github_check = "release"
 # Filter out pre-releases/RCs by default
-ignore_prereleases = false
+ignore_prereleases = true
 
 ["media-gfx/solidcraft"]
 source = "github"
 repo = "tangency-labs/solidcraft"
 tag_prefix = "v"
-
+ignore_prereleases = false
