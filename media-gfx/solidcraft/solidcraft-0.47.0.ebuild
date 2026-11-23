@@ -825,7 +825,7 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
-QA_FLAGS_IGNORED="usr/bin/${PN} usr/bin/${PN}-cli usr/bin/solvecraft-cli"
+QA_FLAGS_IGNORED="usr/bin/${PN} usr/bin/${PN}-cli"
 
 src_unpack() {
 	cargo_src_unpack
@@ -842,8 +842,7 @@ src_compile() {
 src_install() {
 	dobin \
 	    "$(cargo_target_dir)/${PN}" \
-		"$(cargo_target_dir)/${PN}-cli" \
-		"$(cargo_target_dir)/solvecraft-cli"
+		"$(cargo_target_dir)/${PN}-cli"
 
 	local app_id="io.tangencylabs.${PN}"
 	domenu "assets/platforms/linux/${app_id}.desktop"
