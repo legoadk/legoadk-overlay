@@ -22,6 +22,7 @@ CRATES="
 	aes@0.8.4
 	aes@0.9.4
 	ahash@0.8.12
+	aho-corasick@1.1.5
 	alloc-no-stdlib@2.0.4
 	alloc-stdlib@0.2.4
 	allocator-api2@0.2.21
@@ -81,13 +82,17 @@ CRATES="
 	byteorder-lite@0.1.0
 	byteorder@1.5.0
 	bytes@1.12.1
-	cadmpeg-codec-freecad@0.6.7
-	cadmpeg-codec-rhino@0.6.7
-	cadmpeg-codec-step@0.6.7
-	cadmpeg-container@0.6.7
-	cadmpeg-core@0.6.7
-	cadmpeg-ir@0.6.7
-	cadmpeg-registry@0.6.7
+	cadmpeg-codec-freecad@0.6.12
+	cadmpeg-codec-iges@0.6.12
+	cadmpeg-codec-rhino@0.6.12
+	cadmpeg-codec-step@0.6.12
+	cadmpeg-codec-usd@0.6.12
+	cadmpeg-container@0.6.12
+	cadmpeg-core@0.6.12
+	cadmpeg-ir@0.6.12
+	cadmpeg-measure@0.6.12
+	cadmpeg-registry@0.6.12
+	cadmpeg-tessellate@0.6.12
 	calloop-wayland-source@0.3.0
 	calloop-wayland-source@0.4.1
 	calloop@0.13.0
@@ -96,6 +101,7 @@ CRATES="
 	cap-primitives@4.0.3
 	cap-std@4.0.3
 	cast5@0.11.1
+	cavalier_contours@0.9.0
 	cbc@0.1.2
 	cbc@0.2.1
 	cc@1.6.0
@@ -105,6 +111,7 @@ CRATES="
 	cgl@0.3.2
 	chacha20@0.10.2
 	chardetng@0.1.17
+	chrono@0.4.45
 	ciborium-io@0.2.2
 	ciborium-ll@0.2.2
 	ciborium@0.2.2
@@ -132,19 +139,19 @@ CRATES="
 	cpubits@0.1.1
 	cpufeatures@0.2.17
 	cpufeatures@0.3.1
-	cranelift-assembler-x64-meta@0.135.8
-	cranelift-assembler-x64@0.135.8
-	cranelift-bforest@0.135.8
-	cranelift-bitset@0.135.8
-	cranelift-codegen-meta@0.135.8
-	cranelift-codegen-shared@0.135.8
-	cranelift-codegen@0.135.8
-	cranelift-control@0.135.8
-	cranelift-entity@0.135.8
-	cranelift-frontend@0.135.8
-	cranelift-isle@0.135.8
-	cranelift-native@0.135.8
-	cranelift-srcgen@0.135.8
+	cranelift-assembler-x64-meta@0.135.9
+	cranelift-assembler-x64@0.135.9
+	cranelift-bforest@0.135.9
+	cranelift-bitset@0.135.9
+	cranelift-codegen-meta@0.135.9
+	cranelift-codegen-shared@0.135.9
+	cranelift-codegen@0.135.9
+	cranelift-control@0.135.9
+	cranelift-entity@0.135.9
+	cranelift-frontend@0.135.9
+	cranelift-isle@0.135.9
+	cranelift-native@0.135.9
+	cranelift-srcgen@0.135.9
 	crc24@0.1.6
 	crc32fast@1.5.2
 	crossbeam-channel@0.5.17
@@ -163,6 +170,7 @@ CRATES="
 	darling@0.20.11
 	darling_core@0.20.11
 	darling_macro@0.20.11
+	data-url@0.3.2
 	dbl@0.3.2
 	dbus-secret-service@4.1.0
 	dbus@0.9.12
@@ -175,10 +183,13 @@ CRATES="
 	des@0.8.1
 	digest@0.10.7
 	digest@0.11.3
+	directories-next@2.0.0
+	dirs-sys-next@0.1.2
 	dispatch2@0.3.1
 	dispatch@0.2.0
 	displaydoc@0.2.7
 	dlib@0.5.3
+	doctest-file@1.1.1
 	document-features@0.2.12
 	downcast-rs@1.2.1
 	dpi@0.1.2
@@ -187,16 +198,10 @@ CRATES="
 	eax@0.5.0
 	ecb@0.2.1
 	ecdsa@0.16.9
-	ecolor@0.37.0
 	ed25519-dalek@2.2.0
 	ed25519@2.2.3
-	eframe@0.37.0
-	egui-winit@0.37.0
-	egui@0.37.0
-	egui_glow@0.37.0
 	either@1.19.0
 	elliptic-curve@0.13.8
-	emath@0.37.0
 	embed-resource@3.0.12
 	embedded-io@0.4.0
 	embedded-io@0.6.1
@@ -205,8 +210,6 @@ CRATES="
 	enumflags2@0.7.12
 	enumflags2_derive@0.7.12
 	enumn@0.1.14
-	epaint@0.37.0
-	epaint_default_fonts@0.37.0
 	equivalent@1.0.2
 	errno@0.3.14
 	error-code@3.4.0
@@ -222,14 +225,16 @@ CRATES="
 	find-msvc-tools@0.1.14
 	fixedbitset@0.5.7
 	flate2@1.1.10
+	float-cmp@0.9.0
 	fnv@1.0.7
 	foldhash@0.1.5
 	foldhash@0.2.0
 	font-types@0.12.6
+	fontdb@0.24.0
 	foreign-types-macros@0.2.4
 	foreign-types-shared@0.3.1
 	foreign-types@0.5.0
-	form_urlencoded@1.2.2
+	form_urlencoded@1.2.3
 	fs-set-times@0.20.3
 	funty@2.0.0
 	futures-channel@0.3.34
@@ -242,6 +247,8 @@ CRATES="
 	futures-util@0.3.34
 	futures@0.3.34
 	generic-array@0.14.7
+	gerber-types@0.7.0
+	gerber_parser@0.5.0
 	gethostname@1.1.0
 	getrandom@0.2.17
 	getrandom@0.3.4
@@ -277,6 +284,8 @@ CRATES="
 	http@1.5.0
 	httparse@1.10.1
 	hybrid-array@0.4.15
+	iana-time-zone-haiku@0.1.2
+	iana-time-zone@0.1.65
 	icu_collections@2.3.0
 	icu_locale_core@2.3.0
 	icu_normalizer@2.3.0
@@ -291,10 +300,12 @@ CRATES="
 	idna_adapter@1.2.2
 	image-webp@0.2.4
 	image@0.25.10
+	imagesize@0.15.0
 	indexmap@2.14.2
 	inflections@1.1.1
 	inout@0.1.4
 	inout@0.2.6
+	interprocess@2.4.8
 	io-extras@0.19.0
 	io-lifetimes@2.0.4
 	io-lifetimes@3.0.1
@@ -316,6 +327,8 @@ CRATES="
 	khronos-egl@6.0.0
 	khronos_api@3.1.0
 	kurbo@0.13.1
+	lazy-regex-proc_macros@3.6.2
+	lazy-regex@3.6.2
 	lazy_static@1.5.1
 	leb128fmt@0.1.0
 	libc@0.2.190
@@ -385,6 +398,8 @@ CRATES="
 	objc2-metal@0.3.2
 	objc2-quartz-core@0.2.2
 	objc2-quartz-core@0.3.2
+	objc2-quick-look-thumbnailing@0.3.2
+	objc2-quick-look-ui@0.3.2
 	objc2-symbols@0.2.2
 	objc2-ui-kit@0.2.2
 	objc2-ui-kit@0.3.2
@@ -409,6 +424,7 @@ CRATES="
 	parking_lot@0.12.5
 	parking_lot_core@0.9.12
 	password-hash@0.5.0
+	pdf-writer@0.15.0
 	pem-rfc7468@0.7.0
 	peniko@0.6.1
 	percent-encoding@2.3.2
@@ -418,6 +434,7 @@ CRATES="
 	phf_generator@0.14.0
 	phf_macros@0.14.0
 	phf_shared@0.14.0
+	pico-args@0.5.0
 	pin-project-internal@1.1.13
 	pin-project-lite@0.2.17
 	pin-project@1.1.13
@@ -443,8 +460,8 @@ CRATES="
 	proc-macro2@1.0.107
 	profiling@1.0.18
 	proptest@1.12.0
-	pulley-interpreter@48.0.8
-	pulley-macros@48.0.8
+	pulley-interpreter@48.0.9
+	pulley-macros@48.0.9
 	pxfm@0.1.30
 	quick-error@2.0.1
 	quick-xml@0.41.0
@@ -465,17 +482,23 @@ CRATES="
 	rayon-core@1.13.0
 	rayon@1.12.0
 	read-fonts@0.41.0
+	recvmsg@1.0.0
 	redox_syscall@0.4.1
 	redox_syscall@0.5.18
 	redox_syscall@0.9.4
+	redox_users@0.4.6
 	ref-cast-impl@1.0.27
 	ref-cast@1.0.27
 	regalloc2@0.15.2
+	regex-automata@0.4.18
 	regex-syntax@0.8.11
+	regex@1.13.1
 	renderdoc-sys@1.1.0
 	replace_with@0.1.8
+	resvg@0.50.0
 	rfc6979@0.4.0
 	rfd@0.17.2
+	rgb@0.8.53
 	ring@0.17.14
 	ripemd@0.1.3
 	robust@1.2.0
@@ -497,6 +520,7 @@ CRATES="
 	rustls@0.23.46
 	rustversion@1.0.23
 	ruzstd@0.9.1
+	ryu@1.0.23
 	same-file@1.0.6
 	schannel@0.1.29
 	schemars@1.2.3
@@ -531,10 +555,12 @@ CRATES="
 	sha3@0.10.9
 	shlex@2.0.1
 	signal-hook-registry@1.4.8
+	signal-hook@0.4.5
 	signature@2.2.0
 	simd-adler32@0.3.10
 	simd_cesu8@1.2.0
 	simdutf8@0.1.5
+	simplecss@0.2.2
 	siphasher@1.0.4
 	skrifa@0.44.0
 	slab@0.4.12
@@ -551,11 +577,15 @@ CRATES="
 	spirv@0.4.0+sdk-1.4.341.0
 	spki@0.7.3
 	stable_deref_trait@1.2.1
+	static_aabb2d_index@2.1.0
 	static_assertions@1.1.0
 	strict-num@0.1.1
 	stringprep@0.1.5
 	strsim@0.11.1
+	strum@0.27.2
+	strum_macros@0.27.2
 	subtle@2.6.1
+	svgtypes@0.16.2
 	syn@2.0.119
 	syn@3.0.6
 	synstructure@0.13.2
@@ -575,7 +605,9 @@ CRATES="
 	tinystr@0.8.4
 	tinyvec@1.13.3
 	tokio@1.53.2
+	toml@0.9.12+spec-1.1.0
 	toml@1.1.8+spec-1.1.0
+	toml_datetime@0.7.5+spec-1.1.0
 	toml_datetime@1.1.2+spec-1.1.0
 	toml_edit@0.25.15+spec-1.1.0
 	toml_parser@1.1.5+spec-1.1.0
@@ -583,6 +615,7 @@ CRATES="
 	tracing-attributes@0.1.31
 	tracing-core@0.1.36
 	tracing@0.1.44
+	trash@5.2.9
 	tree_magic_mini@3.2.2
 	ttf-parser@0.25.1
 	twofish@0.7.1
@@ -605,7 +638,9 @@ CRATES="
 	untrusted@0.9.0
 	ureq-proto@0.6.4
 	ureq@3.4.2
-	url@2.5.8
+	url@2.5.9
+	urlencoding@2.1.3
+	usvg@0.50.0
 	utf8-zero@0.8.1
 	utf8_iter@1.0.4
 	uuid@1.27.0
@@ -628,18 +663,20 @@ CRATES="
 	wasmparser@0.254.2
 	wasmparser@0.263.0
 	wasmprinter@0.254.2
-	wasmtime-environ@48.0.8
-	wasmtime-internal-component-macro@48.0.8
-	wasmtime-internal-component-util@48.0.8
-	wasmtime-internal-core@48.0.8
-	wasmtime-internal-cranelift@48.0.8
-	wasmtime-internal-fiber@48.0.8
-	wasmtime-internal-jit-debug@48.0.8
-	wasmtime-internal-jit-icache-coherence@48.0.8
-	wasmtime-internal-unwinder@48.0.8
-	wasmtime-internal-versioned-export-macros@48.0.8
-	wasmtime-internal-wit-bindgen@48.0.8
-	wasmtime@48.0.8
+	wasmtime-environ@48.0.9
+	wasmtime-internal-cache@48.0.9
+	wasmtime-internal-component-macro@48.0.9
+	wasmtime-internal-component-util@48.0.9
+	wasmtime-internal-core@48.0.9
+	wasmtime-internal-cranelift@48.0.9
+	wasmtime-internal-fiber@48.0.9
+	wasmtime-internal-jit-debug@48.0.9
+	wasmtime-internal-jit-icache-coherence@48.0.9
+	wasmtime-internal-unwinder@48.0.9
+	wasmtime-internal-versioned-export-macros@48.0.9
+	wasmtime-internal-winch@48.0.9
+	wasmtime-internal-wit-bindgen@48.0.9
+	wasmtime@48.0.9
 	wast@263.0.0
 	wat@1.263.0
 	wayland-backend@0.3.17
@@ -668,10 +705,12 @@ CRATES="
 	wgpu-naga-bridge@30.0.1
 	wgpu-types@30.0.1
 	wgpu@30.0.1
+	widestring@1.2.1
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.11
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
+	winch-codegen@48.0.9
 	windows-collections@0.3.2
 	windows-core@0.62.2
 	windows-future@0.3.2
@@ -705,6 +744,7 @@ CRATES="
 	windows_x86_64_gnullvm@0.53.1
 	windows_x86_64_msvc@0.52.6
 	windows_x86_64_msvc@0.53.1
+	winnow@0.7.15
 	winnow@1.0.4
 	winreg@0.56.0
 	winx@0.36.4
@@ -748,6 +788,9 @@ CRATES="
 	zlib-rs@0.6.8
 	zmij@1.0.23
 	zopfli@0.8.3
+	zstd-safe@7.4.1
+	zstd-sys@2.1.3+zstd.1.5.7
+	zstd@0.13.5
 	zune-core@0.5.3
 	zune-jpeg@0.5.15
 	zvariant@4.2.0
@@ -771,9 +814,8 @@ SRC_URI="
 LICENSE="|| ( Apache-2.0 MIT )"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD Boost-1.0
-	CDLA-Permissive-2.0 ISC MIT OFL-1.1 UbuntuFontLicense-1.0
-	Unicode-3.0 ZLIB
+	0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD Boost-1.0
+	CDLA-Permissive-2.0 ISC MIT Unicode-3.0 ZLIB
 "
 
 SLOT="0"
@@ -799,7 +841,7 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
-QA_FLAGS_IGNORED="usr/bin/${PN} usr/bin/${PN}-cli usr/bin/solvecraft-cli"
+QA_FLAGS_IGNORED="usr/bin/${PN} usr/bin/${PN}-cli"
 
 src_unpack() {
 	cargo_src_unpack
@@ -816,8 +858,7 @@ src_compile() {
 src_install() {
 	dobin \
 	    "$(cargo_target_dir)/${PN}" \
-		"$(cargo_target_dir)/${PN}-cli" \
-		"$(cargo_target_dir)/solvecraft-cli"
+		"$(cargo_target_dir)/${PN}-cli"
 
 	local app_id="io.tangencylabs.${PN}"
 	domenu "assets/platforms/linux/${app_id}.desktop"
@@ -825,7 +866,7 @@ src_install() {
 	insinto /usr/share/mime/packages
 	newins "assets/platforms/linux/${app_id}.mime.xml" "${app_id}.xml"
 
-	sed -e "s/@VERSION@/${PV}/g" -e 's/@DATE@/2026-11-14/g' \
+	sed -e "s/@VERSION@/${PV}/g" -e 's/@DATE@/2026-11-25/g' \
 		"assets/platforms/linux/${app_id}.metainfo.xml.in" > "${T}/${app_id}.metainfo.xml" || die
 	insinto /usr/share/metainfo
 	doins "${T}/${app_id}.metainfo.xml"
