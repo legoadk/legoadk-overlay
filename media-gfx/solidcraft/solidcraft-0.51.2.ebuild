@@ -83,6 +83,7 @@ CRATES="
 	byteorder@1.5.0
 	bytes@1.12.1
 	cadmpeg-codec-freecad@0.6.12
+	cadmpeg-codec-iges@0.6.12
 	cadmpeg-codec-rhino@0.6.12
 	cadmpeg-codec-step@0.6.12
 	cadmpeg-codec-usd@0.6.12
@@ -182,6 +183,8 @@ CRATES="
 	des@0.8.1
 	digest@0.10.7
 	digest@0.11.3
+	directories-next@2.0.0
+	dirs-sys-next@0.1.2
 	dispatch2@0.3.1
 	dispatch@0.2.0
 	displaydoc@0.2.7
@@ -227,10 +230,11 @@ CRATES="
 	foldhash@0.1.5
 	foldhash@0.2.0
 	font-types@0.12.6
+	fontdb@0.24.0
 	foreign-types-macros@0.2.4
 	foreign-types-shared@0.3.1
 	foreign-types@0.5.0
-	form_urlencoded@1.2.2
+	form_urlencoded@1.2.3
 	fs-set-times@0.20.3
 	funty@2.0.0
 	futures-channel@0.3.34
@@ -354,8 +358,8 @@ CRATES="
 	moxcms@0.8.1
 	muda@0.21.2
 	multiversion_no_op@1.0.0
-	naga-types@30.0.1
-	naga@30.0.1
+	naga-types@30.0.2
+	naga@30.0.2
 	ndk-context@0.1.1
 	ndk-sys@0.6.0+11769913
 	ndk@0.9.0
@@ -394,6 +398,8 @@ CRATES="
 	objc2-metal@0.3.2
 	objc2-quartz-core@0.2.2
 	objc2-quartz-core@0.3.2
+	objc2-quick-look-thumbnailing@0.3.2
+	objc2-quick-look-ui@0.3.2
 	objc2-symbols@0.2.2
 	objc2-ui-kit@0.2.2
 	objc2-ui-kit@0.3.2
@@ -480,6 +486,7 @@ CRATES="
 	redox_syscall@0.4.1
 	redox_syscall@0.5.18
 	redox_syscall@0.9.4
+	redox_users@0.4.6
 	ref-cast-impl@1.0.27
 	ref-cast@1.0.27
 	regalloc2@0.15.2
@@ -548,6 +555,7 @@ CRATES="
 	sha3@0.10.9
 	shlex@2.0.1
 	signal-hook-registry@1.4.8
+	signal-hook@0.4.5
 	signature@2.2.0
 	simd-adler32@0.3.10
 	simd_cesu8@1.2.0
@@ -558,6 +566,7 @@ CRATES="
 	slab@0.4.12
 	slotmap@1.1.1
 	smallvec@1.16.2
+	smed-client@0.1.0
 	smithay-client-toolkit@0.19.2
 	smithay-client-toolkit@0.20.0
 	smithay-clipboard@0.7.3
@@ -597,7 +606,9 @@ CRATES="
 	tinystr@0.8.4
 	tinyvec@1.13.3
 	tokio@1.53.2
+	toml@0.9.12+spec-1.1.0
 	toml@1.1.8+spec-1.1.0
+	toml_datetime@0.7.5+spec-1.1.0
 	toml_datetime@1.1.2+spec-1.1.0
 	toml_edit@0.25.15+spec-1.1.0
 	toml_parser@1.1.5+spec-1.1.0
@@ -628,7 +639,7 @@ CRATES="
 	untrusted@0.9.0
 	ureq-proto@0.6.4
 	ureq@3.4.2
-	url@2.5.8
+	url@2.5.9
 	urlencoding@2.1.3
 	usvg@0.50.0
 	utf8-zero@0.8.1
@@ -654,6 +665,7 @@ CRATES="
 	wasmparser@0.263.0
 	wasmprinter@0.254.2
 	wasmtime-environ@48.0.9
+	wasmtime-internal-cache@48.0.9
 	wasmtime-internal-component-macro@48.0.9
 	wasmtime-internal-component-util@48.0.9
 	wasmtime-internal-core@48.0.9
@@ -663,6 +675,7 @@ CRATES="
 	wasmtime-internal-jit-icache-coherence@48.0.9
 	wasmtime-internal-unwinder@48.0.9
 	wasmtime-internal-versioned-export-macros@48.0.9
+	wasmtime-internal-winch@48.0.9
 	wasmtime-internal-wit-bindgen@48.0.9
 	wasmtime@48.0.9
 	wast@263.0.0
@@ -684,20 +697,21 @@ CRATES="
 	webpki-root-certs@1.0.10
 	weezl@0.1.12
 	weezl@0.2.1
-	wgpu-core-deps-apple@30.0.1
-	wgpu-core-deps-emscripten@30.0.1
-	wgpu-core-deps-wasm@30.0.1
-	wgpu-core-deps-windows-linux-android@30.0.1
-	wgpu-core@30.0.1
-	wgpu-hal@30.0.1
-	wgpu-naga-bridge@30.0.1
-	wgpu-types@30.0.1
-	wgpu@30.0.1
+	wgpu-core-deps-apple@30.0.2
+	wgpu-core-deps-emscripten@30.0.2
+	wgpu-core-deps-wasm@30.0.2
+	wgpu-core-deps-windows-linux-android@30.0.2
+	wgpu-core@30.0.2
+	wgpu-hal@30.0.2
+	wgpu-naga-bridge@30.0.2
+	wgpu-types@30.0.2
+	wgpu@30.0.2
 	widestring@1.2.1
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.11
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
+	winch-codegen@48.0.9
 	windows-collections@0.3.2
 	windows-core@0.62.2
 	windows-future@0.3.2
@@ -731,6 +745,7 @@ CRATES="
 	windows_x86_64_gnullvm@0.53.1
 	windows_x86_64_msvc@0.52.6
 	windows_x86_64_msvc@0.53.1
+	winnow@0.7.15
 	winnow@1.0.4
 	winreg@0.56.0
 	winx@0.36.4
@@ -774,6 +789,9 @@ CRATES="
 	zlib-rs@0.6.8
 	zmij@1.0.23
 	zopfli@0.8.3
+	zstd-safe@7.4.1
+	zstd-sys@2.1.3+zstd.1.5.7
+	zstd@0.13.5
 	zune-core@0.5.3
 	zune-jpeg@0.5.15
 	zvariant@4.2.0
@@ -824,7 +842,7 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
-QA_FLAGS_IGNORED="usr/bin/${PN} usr/bin/${PN}-cli usr/bin/solvecraft-cli"
+QA_FLAGS_IGNORED="usr/bin/${PN} usr/bin/${PN}-cli"
 
 src_unpack() {
 	cargo_src_unpack
@@ -841,8 +859,7 @@ src_compile() {
 src_install() {
 	dobin \
 	    "$(cargo_target_dir)/${PN}" \
-		"$(cargo_target_dir)/${PN}-cli" \
-		"$(cargo_target_dir)/solvecraft-cli"
+		"$(cargo_target_dir)/${PN}-cli"
 
 	local app_id="io.tangencylabs.${PN}"
 	domenu "assets/platforms/linux/${app_id}.desktop"
@@ -850,7 +867,7 @@ src_install() {
 	insinto /usr/share/mime/packages
 	newins "assets/platforms/linux/${app_id}.mime.xml" "${app_id}.xml"
 
-	sed -e "s/@VERSION@/${PV}/g" -e 's/@DATE@/2026-11-16/g' \
+	sed -e "s/@VERSION@/${PV}/g" -e 's/@DATE@/2026-11-26/g' \
 		"assets/platforms/linux/${app_id}.metainfo.xml.in" > "${T}/${app_id}.metainfo.xml" || die
 	insinto /usr/share/metainfo
 	doins "${T}/${app_id}.metainfo.xml"
